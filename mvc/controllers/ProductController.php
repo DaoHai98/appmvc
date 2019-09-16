@@ -1,7 +1,27 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 9/13/2019
- * Time: 6:58 PM
- */
+namespace MVC\Controllers;
+
+
+class ProductController {
+
+
+    public function index() {
+
+    }
+
+
+    public function create() {
+
+    }
+
+
+    public function edit() {
+
+    }
+
+
+    public function delete() {
+
+    }
+
+}

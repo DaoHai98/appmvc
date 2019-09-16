@@ -2,7 +2,8 @@
 namespace MVC\Controllers;
 
 use MVC\Models\PostModel;
-class PostController{
+class PostController
+{
     public function index(){
         echo"<br>".__METHOD__;
         $model= new PostModel();

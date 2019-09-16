@@ -9,7 +9,7 @@ class Database
     const DATABASE_PASSWORD = "";
     const DATABASE_NAME = "mvc";
 
-    public function _construct()
+    public function __construct()
     {
         if (!$this->connection) {
             $this->connection = mysqli_connect(self::DATABASE_SEVER, self::DATABASE_USER, self::DATABASE_PASSWORD, self::DATABASE_NAME);

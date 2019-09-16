@@ -1,7 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 9/13/2019
- * Time: 6:58 PM
- */
+namespace MVC\Controllers;
+
+class ErrorController {
+
+    public function redirect404() {
+        include_once "mvc/view/error/404.php";
+    }
+
+}

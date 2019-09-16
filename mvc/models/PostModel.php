@@ -1,5 +1,6 @@
 <?php
  namespace MVC\Models;
+
  class PostModel extends Database{
      public function getALL(){
          $sqlSelect="SELECT * FROM employees";

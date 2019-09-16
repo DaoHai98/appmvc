@@ -27,22 +27,22 @@
                 </thead>
                 <tbody>
                 <?php
-                 if(mysqli_num_rows($result)>0){
-                     while ($row = mysqli_fetch_row($result)){
+                 if( mysqli_num_rows($result) > 0){
+                     while ($row = mysqli_fetch_assoc($result)){
                          ?>
                        <tr>
-                           <th scope="row"><?php echo $row["id"]?></th>
-                           <th scope="row"><?php echo $row["name"]?></th>
-                           <th scope="row"><?php echo $row["address"]?></th>
-                           <th scope="row"><?php echo $row["salary"]?></th>
-                           <th>
+                           <th scope="row"><?php echo $row['id']?></th>
+                           <td ><?php echo $row['name']?></td>
+                           <td ><?php echo $row['address']?></td>
+                           <td ><?php echo $row['salary']?></td>
+                           <td>
                                <div>
                                    <a class="btn btn-warning" href="index.php?controller=post&action=edit&id=<?php echo $row['id'] ?>">Sửa nhân viên</a>
                                </div>
                                <div>
                                    <a class="btn btn-danger" href="index.php?controller=post&action=delete&id=<?php echo $row['id'] ?>">Xóa nhân viên</a>
                                </div>
-                           </th>
+                           </td>
                        </tr>
                      <?php
                      }
