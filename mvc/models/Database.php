@@ -1,7 +1,20 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 9/13/2019
- * Time: 7:00 PM
- */
+
+namespace MVC\Models;
+class Database
+{
+    public $connection;
+    const DATABASE_SEVER = "localhost";
+    const DATABASE_USER = "root";
+    const DATABASE_PASSWORD = "";
+    const DATABASE_NAME = "mvc";
+
+    public function _construct()
+    {
+        if (!$this->connection) {
+            $this->connection = mysqli_connect(self::DATABASE_SEVER, self::DATABASE_USER, self::DATABASE_PASSWORD, self::DATABASE_NAME);
+
+        }
+    }
+}
+?>

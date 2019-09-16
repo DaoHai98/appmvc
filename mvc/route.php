@@ -1,7 +1,2 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 9/13/2019
- * Time: 6:58 PM
- */
+  namespace MVC;
